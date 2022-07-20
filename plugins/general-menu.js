@@ -99,9 +99,9 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
     let fla = 'https://telegra.ph/file/09ce41e6673af3383a91e.jpg'
-    let text = 'menu'
+    let teks = 'Menu'
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-  await conn.reply(m.chat, '*Tunggu ya sayang.....*', ftroli)
+  await conn.reply(m.chat, '*Memuat Menu...*', ftroli)
     const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './src/avatar_contact.png')
     // if (m.isGroup) return conn.sendButton(m.chat, text.trim(), conn.getName(conn.user.jid), pp, [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], m)
     //conn.sendHydrated(m.chat, text.trim(), conn.getName(conn.user.jid), await genProfile(conn, m), 'https://youtube.com/channel/UC0hs_I8N3JntK5vO6KogavQ', 'YouTube', null, null, [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], m)
@@ -117,7 +117,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
 } })
 conn.sendFile(m.chat, './media/tante-tante.mp3', 'tante-tante.mp3', null, fkontak, true, {
 type: 'audioMessage', 
-ptt: true, contextInfo:{ externalAdReply: {title: 'Ingat kamu itu jomblo', body: `${pickRandom(['Canda Sayang:v', 'Canda sayang'])}`, sourceUrl: 'https://Instagram.com/nan_sakrn', thumbnail: await (await fetch('https://telegra.ph/file/23376c29dd5378fd73f9c.jpg')).buffer(),}} 
+ptt: true, contextInfo:{ externalAdReply: {title: 'Stay Grateful With Your Life', body: `${pickRandom(['Jangan pernah menyakiti orang tau kita', 'Create By Jaka'])}`, sourceUrl: 'https://instagram.com/nan_sakrn', thumbnail: await (await fetch('https://telegra.ph/file/84e3a088695da949fab36.jpg')).buffer(),}} 
 })
     // conn.sendButton(m.chat, 
     //`*Hi, ${name} 👋*\n\n`, 
