@@ -117,7 +117,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
 } })
 conn.sendFile(m.chat, './media/tante-tante.mp3', 'tante-tante.mp3', null, fkontak, true, {
 type: 'audioMessage', 
-ptt: true, contextInfo:{ externalAdReply: {title: 'Stay Grateful With Your Life', body: `${pickRandom(['Jangan pernah menyakiti orang tau kita', 'Create By Jaka'])}`, sourceUrl: 'https://instagram.com/nan_sakrn', thumbnail: await (await fetch('https://telegra.ph/file/84e3a088695da949fab36.jpg')).buffer(),}} 
+ptt: true, contextInfo:{ externalAdReply: {title: 'Stay Grateful With Your Life', body: `${pickRandom(['Never give up', 'Create By Jaka'])}`, sourceUrl: 'https://instagram.com/nan_sakrn', thumbnail: await (await fetch('https://telegra.ph/file/84e3a088695da949fab36.jpg')).buffer(),}} 
 })
     // conn.sendButton(m.chat, 
     //`*Hi, ${name} 👋*\n\n`, 
