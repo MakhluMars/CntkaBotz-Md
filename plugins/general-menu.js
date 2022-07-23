@@ -112,12 +112,12 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     description: '', 
     mediaType: 2, 
     thumbnail: await (await fetch('https://telegra.ph/file/84e3a088695da949fab36.jpg')).buffer(), 
-    mediaUrl: `${pickRandom([`https://www.facebook.com/Inunime-107082474576049/`,`https://youtu.be/JWHV8lPTzPs`,`https://instagram.com/sfdesign_id`])}`,  
+    mediaUrl: `${pickRandom([`https://www.facebook.com/Inunime-107082474576049/`,`https://youtu.be/JWHV8lPTzPs`,`https://instagram.com/nuru`])}`,  
 }
 } })
 conn.sendFile(m.chat, './media/tante-tante.mp3', 'tante-tante.mp3', null, fkontak, true, {
 type: 'audioMessage', 
-ptt: true, contextInfo:{ externalAdReply: {title: 'Stay Grateful With Your Life', body: `${pickRandom(['Never give up', 'Create By Jaka'])}`, sourceUrl: 'https://instagram.com/nan_sakrn', thumbnail: await (await fetch('https://telegra.ph/file/84e3a088695da949fab36.jpg')).buffer(),}} 
+ptt: true, contextInfo:{ externalAdReply: {title: 'Stay Grateful With Your Life', body: `${pickRandom(['Never give up', 'Create By fityakece'])}`, sourceUrl: 'https://instagram.com/nan_sakrn', thumbnail: await (await fetch('https://telegra.ph/file/84e3a088695da949fab36.jpg')).buffer(),}} 
 })
     // conn.sendButton(m.chat, 
     //`*Hi, ${name} 👋*\n\n`, 
@@ -130,10 +130,10 @@ ptt: true, contextInfo:{ externalAdReply: {title: 'Stay Grateful With Your Life'
     throw e
   }
 }
-handler.help = ['m']
+handler.help = ['menu']
 handler.tags = ['general']
 handler.alias = ['menu']
-handler.command = /^(m)$/i
+handler.command = /^(menu)$/i
 handler.exp = 3
 
 export default handler
