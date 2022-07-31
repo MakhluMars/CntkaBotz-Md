@@ -5,7 +5,7 @@ import moment from 'moment-timezone'
 
 global.owner = [
   ['+62 857-8569-4474'],
-  ['+62 888-9778-569', Kyy-MD', true],
+  ['+62 888-9778-569', 'Kyy-MD', true],
   ['+62 812-2778-0854', 'Naruto-XD', true],
   ['+62 858-8513-2371', 'Azuya-KNTL', true],
   ['+62 813-8603-4074', 'Rian Botz-MD', true],
